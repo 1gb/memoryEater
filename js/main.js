@@ -76,7 +76,10 @@ $(document).ready(function() {
       } //end memories.length loop
 
       for (m = 0; m < repeatedWords.length; m++) {
-        $('.' + repeatedWords[m]).addClass('blur');
+        $('.' + repeatedWords[m]).addClass('eaten');
+        $('.' + repeatedWords[m]).first().css(
+          {"background-color": "white" }
+        );
       }
 
     console.log(repeatedWords);

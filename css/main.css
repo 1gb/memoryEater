@@ -96,26 +96,66 @@ textarea {
    ========================================================================== */
 
    body {
-     background: #0099cc;
+     background-image: url(../img/background.gif);
      text-align: center;
-     font-family: 'Bubbler One', sans-serif;
-     color: white;
+     font-family: 'VT323', monospace;
+     color: black;
    }
 
    h1 {
-     font-size: 40px;
+     font-size: 60px;
+   }
+
+   .feedH1 {
+     margin: 0 auto;
+     padding: 20px;
+     width: 35%;
    }
 
    .textInput {
+     color: white;
+     text-shadow: 2px 2px 0px #000;
+     background: none;
+     font-size: 40px;
+     border: 5px solid white;
+     box-shadow: 2px 2px 0px #000;
+     text-align: center;
+     overflow: hidden;
+   }
+
+   .textInput:hover {
+     background:white;
+     box-shadow: none;
+     text-shadow: none;
      color: black;
+   }
+
+   textarea: focus, input:focus {
+     outline: none;
+   }
+
+   *:focus {
+       outline: none;
    }
 
    button {
      display: block;
+     background: none;
+     color: black;
+     border: none;
      margin: 0 auto;
-     font-family: 'Bubbler One', sans-serif;
-     font-size: 20px;
-     border-radius: 7px;
+     font-family: 'VT323', monospace;
+     font-size: 60px;
+   }
+
+   button:hover {
+     color: blue;
+   }
+
+   .logo {
+     position:fixed;
+     right:10px;
+     bottom:10px;
    }
 
    .projH1 {
@@ -125,9 +165,20 @@ textarea {
      margin: 0 auto;
      margin-bottom: 90px;
      width: 90%;
-     background-color: #aaa;
-     font-family: 'Arimo', sans-serif;
+     background: none;
      padding: 10px;
+   }
+
+   .projMems {
+    -moz-column-count:4;
+    -moz-column-gap: 2%;
+    -moz-column-width: 25%;
+    -webkit-column-count:4;
+    -webkit-column-gap: 2%;
+    -webkit-column-width: 25%;
+    column-count: 4;
+    column-gap: 2%;
+    column-width: 25%;
    }
 
    .container {
@@ -136,14 +187,12 @@ textarea {
    }
 
    .item {
-     flex: 0;
-     color: red;
-     align-self: stretch;
-     display: inline-block;
+     display: block;
      color: black;
      background: white;
-     padding: 1px;
-     border: 1px solid black;
+     font-size: 20px;
+     margin-bottom: 10px;
+     padding: 4px;
    }
 
    .blur {
@@ -155,19 +204,6 @@ textarea {
      color: black;
      background-color: black;
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================

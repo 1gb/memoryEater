@@ -95,7 +95,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   body {
+     background: #0099cc;
+     text-align: center;
+     font-family: 'Bubbler One', sans-serif;
+     color: white;
+   }
 
+   h1 {
+     font-size: 40px;
+   }
+
+   .textInput {
+     color: black;
+   }
+
+   button {
+     display: block;
+     margin: 0 auto;
+     font-family: 'Bubbler One', sans-serif;
+     font-size: 20px;
+     border-radius: 7px;
+   }
+
+   .projH1 {
+       margin-top: 80px;
+   }
+   .projArea {
+     margin: 0 auto;
+     margin-bottom: 90px;
+     width: 90%;
+     background-color: #aaa;
+     font-family: 'Arimo', sans-serif;
+     padding: 10px;
+   }
+
+   .container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .item {
+     flex: 0;
+     color: red;
+     align-self: stretch;
+     display: inline-block;
+     color: black;
+     background: white;
+     padding: 1px;
+     border: 1px solid black;
+   }
+
+   .blur {
+     color: transparent;
+     text-shadow: 0 0 3px rgba( 0, 0, 0, 0.7);
+   }
+
+   .eaten {
+     color: black;
+     background-color: black;
+   }
 
 
 

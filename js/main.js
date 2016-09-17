@@ -36,7 +36,10 @@ $(document).ready(function() {
 
   for (i = 0; i < memories.length; i++) {
 
-    $('.projMems').append('<div class="item item' + i + '">');
+    //assigns class item and item# to each memory
+    var btemp = '<div class="item item' + i + '">';
+
+    $('.projMems').append(btemp);
     var memArray = memories[i].split(' ');
 
     //individual words in memories, memArray[j] is a single word.
@@ -67,17 +70,19 @@ $(document).ready(function() {
         allWords.push(memArray[j]);
       }
 
-
-        $('.item' + i).append(' <span class="' + memArray[j] + '"> ' + memArray[j] + '</span>');
+        var ctemp = ' <span class="word' + memArray[j] + '"> ' + memArray[j] + '</span>';
+        $('.item' + i).append(ctemp);
 
         }
 
-        $('.projMems').append(' </div>');
+        var dtemp = ' </div>'
+        $('.projMems').append(dtemp);
       } //end memories.length loop
 
       for (m = 0; m < repeatedWords.length; m++) {
-        $('.' + repeatedWords[m]).addClass('eaten');
-        $('.' + repeatedWords[m]).first().css(
+        var temp = '.' + 'word' + repeatedWords[m].toString();
+        $(temp).addClass('eaten');
+        $(temp).first().css(
           {"background-color": "white" }
         );
       }

@@ -1,6 +1,6 @@
 //Todo: case insensitive
-//Todo: animate blur effect
-//Todo: gradual blurring
+//Todo: enter key
+//Todo: not accept blank entries
 
 
 $(document).ready(function() {
@@ -18,6 +18,9 @@ $(document).ready(function() {
     'Staying up too late before a test playing video games.',
     'The first Pumpkin Spice Latte of the season every year!',
     'I remember moving out on my own for the first time into my first apartment. I was so happy to be on my own I slept there the first night even though I didn\'t have any furniture yet!',
+    'My coworker made me a cake for my 17th birthday. When I got home I put it in the fridge, but then I had to leave the house to run an errand. When I came back, I found my little brother eating my birthday cake. :()',
+    'I think my happiest moment was seeing my baby daugher for the first time.',
+    'I remember going on long walks on various trails in various parks in Seattle with my ex. The relationship didn\'t work out in the end, but I treasure those memories.'
   ];
 
   //add new memories to array on click
@@ -26,10 +29,23 @@ $(document).ready(function() {
     $(this).val('');
   });
 
+  $(document).keypress(function(e) {
+      if(e.which == 13) {
+        btnClick();
+      }
+  });
+
   $('.submitButton').click(function() {
+    btnClick();
+  });
+
+  function btnClick() {
     memories.unshift( $('.textInput').val() );
+    $('.textInput').val('');
     reDraw();
-  })
+  }
+
+
 
   function reDraw() {
   $('.projMems').empty();

@@ -107,9 +107,6 @@ $(document).ready(function() {
         );
       } //end for loop
 
-    console.log(repeatedWords);
-    console.log(allWords);
-
     allWords = [];
     repeatedWords = [];
   } //end reDraw()

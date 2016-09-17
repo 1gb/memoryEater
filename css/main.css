@@ -146,7 +146,7 @@ textarea {
    ========================================================================== */
 
    body {
-     background-image: url(https://www.dropbox.com/pri/get/memeater/background.gif?raw=1&_subject_uid=69748896&w=AABnmEZGAwz8nWX65oCaR0WcKRODMn0lIZOEely_Cbh_jQ&size=1280x960&size_mode=3);
+     background-image: url(../img/background.gif);
      text-align: center;
      font-family: 'VT323', monospace;
      color: black;
@@ -220,7 +220,7 @@ textarea {
 
    .logo {
      position:fixed;
-     background-image: image("logo.gif");
+     background-image: image('img/logo.gif');
      right:20px;
      bottom:20px;
    }

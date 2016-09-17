@@ -30,6 +30,7 @@ $(document).ready(function() {
 
   $(document).keypress(function(e) {
       if(e.which == 13) {
+        event.preventDefault();
         btnClick();
       }
   });
@@ -40,7 +41,7 @@ $(document).ready(function() {
 
   function btnClick() {
     memories.unshift( $('.textInput').val() );
-    $('.textInput').val('');
+    $('.textInput').val('tell me.');
     reDraw();
   }
 
